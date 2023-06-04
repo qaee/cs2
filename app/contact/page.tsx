@@ -6,7 +6,7 @@ export default function about() {
     return (
         <div>
             <CS2Header />
-            Content
+            contact
         </div>
     )
 }
