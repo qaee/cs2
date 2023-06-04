@@ -10,7 +10,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 export default function Cs2Nav() {
     return (
         <>
-            <AppBar position="fixed">
+            <AppBar position="relative">
                 <Toolbar>
                     <IconButton
                         color="inherit"
