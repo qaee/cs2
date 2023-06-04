@@ -8,10 +8,8 @@ import {theme} from "@/app/sections/header/theme";
 export default function Home() {
   return (
       <>
-          <ThemeProvider theme={theme}>
         <CS2Header />
         <CS2Content></CS2Content>
-          </ThemeProvider>
       </>
   )
 }
