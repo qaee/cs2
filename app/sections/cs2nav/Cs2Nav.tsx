@@ -1,6 +1,6 @@
 "use client";
 import AppBar from '@mui/material/AppBar';
-import {Button, IconButton, Toolbar, Typography} from "@mui/material";
+import {Button, Container, Grid, IconButton, Toolbar, Typography} from "@mui/material";
 import {Badge} from "@mui/base";
 import Link from "next/link";
 import React from 'react'
@@ -21,21 +21,18 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 export default function Cs2Nav() {
     return (
         <>
-            <AppBar >
+            <Grid container spacing={2} >
+                <Grid item xs={2}>
                 <CS2Logo />
-                <Toolbar>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                       edge="start"
-                    >
-                        {/*<MenuIcon />*/}
-                    </IconButton>
-                    <Typography variant="h6" >React Material</Typography>
-                    <Button color="inherit" component={Link} href="/register">Register</Button>
-                </Toolbar>
-            </AppBar>
-
+                </Grid>
+                <Grid item xs={8}>
+                    <Button color="inherit" component={Link} href="/register">Link1</Button>
+                    <Button color="inherit" component={Link} href="/register">Link2</Button>
+                    <Button color="inherit" component={Link} href="/register">Link3</Button>
+                    <Button color="inherit" component={Link} href="/register">Link4</Button>
+                    <Button color="inherit" component={Link} href="/register">Link5</Button>
+                </Grid>
+            </Grid>
         </>
     )
 }

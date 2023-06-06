@@ -8,7 +8,7 @@ import {theme} from "@/app/sections/header/theme";
 export default function Home() {
   return (
       <>
-        <CS2Header />
+          <CS2Header />
         <CS2Content></CS2Content>
       </>
   )
