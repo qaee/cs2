@@ -4,7 +4,7 @@ export default function CS2Content () {
     return (
         <>
             <Grid >
-                <Typography variant="body1">
+                <Typography variant="body2" sx={{border: 2,m:3}} >
                     I'm currently designing and building a job board website.
 
                     I've started designing the page which shows a full job description posting once the user clicks through from a list of search results.

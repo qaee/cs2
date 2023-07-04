@@ -18,8 +18,8 @@ export default function Cs2Nav() {
                     <CS2Logo></CS2Logo>
                  </Grid>
                 <Grid sx={{display: 'flex', border: 2,borderColor: 'error.main',m:3, justifyContent: 'flex-end' }} xs={8}>
-                        <Button color="inherit" component={Link} href="/about">Services</Button>
-                        <Button color="inherit" component={Link} href="/contact">Partners</Button>
+                        <Button color="inherit" component={Link} href="/services">Services</Button>
+                        <Button color="inherit" component={Link} href="/partners">Partners</Button>
                         <Button color="inherit" component={Link} href="/about">About</Button>
                         <Button color="inherit" component={Link} href="/contact">contact </Button>
                 </Grid>
