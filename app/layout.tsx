@@ -4,9 +4,8 @@ import { Inter } from 'next/font/google'
 import {theme} from "@/app/sections/header/theme";
 import {Container, Grid, ThemeProvider} from "@mui/material";
 import react from "react"
+import {Metadata} from "next";
 const inter = Inter({ subsets: ['latin'] })
-
-
 
 export default function RootLayout({
   children,
