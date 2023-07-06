@@ -1,23 +1,42 @@
 import exp from "constants";
-import {Button, Typography, Grid} from "@mui/material";
-export default function CS2Content () {
+import * as React from 'react';
+import {Button, Typography, Grid, Card, CardHeader, Avatar, CardContent, CardActions,IconButton} from "@mui/material";
+import AppleIcon from '@mui/icons-material/Apple';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { red,pink } from '@mui/material/colors';
+import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
+import HomeIcon from '@mui/icons-material/Home';
+export default function IndexPage () {
     return (
         <>
-            <Grid >
-                <Typography variant="body2" sx={{border: 2,m:3}} >
-                    I'm currently designing and building a job board website.
+            <Card sx={{ border: 2 }}>
+                <CardContent>
+                    <CardHeader
+                        avatar={
+                            <Avatar sx={{ bgcolor: red[500] }} aria-label="apple">
+                                QA
+                            </Avatar>
+                        }
+                        action={
+                            <IconButton aria-label="apple">
+                                <MoreVertIcon />
+                                <AppleIcon></AppleIcon>
+                            </IconButton>
+                        }
+                        title="Shrimp and Chorizo Paella"
+                        subheader="September 14, 2016"
+                    />
+                    <HomeIcon />
+                    <HomeIcon color="primary" />
+                    <HomeIcon color="secondary" />
+                    <HomeIcon color="success" />
+                    <HomeIcon color="action" />
+                    <HomeIcon color="disabled" />
+                    <HomeIcon sx={{ color: pink[500] }} />
+                </CardContent>
 
-                    I've started designing the page which shows a full job description posting once the user clicks through from a list of search results.
-
-                    The one problem I'm facing is that the actual content just looks completely dull.
-
-                    Its essentially just a text document with a set of sub-headings, copy and a couple of lists here and there.
-
-                    What methods can I use to layout or style this kind of thing to make it look interesting, readable and not just seem like a dull word document whilst maintaining a professional look?
-                    Body 2
-                </Typography>
-            </Grid>
+            </Card>
         </>
 
-    )
+    );
 }
